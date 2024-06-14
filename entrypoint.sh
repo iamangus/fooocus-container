@@ -12,5 +12,4 @@ fi
 cd /data/fooocus
 source .venv/bin/activate
 echo "Launching..."
-ls
 python entry_with_update.py --listen 0.0.0.0 --port 8080 --theme dark
