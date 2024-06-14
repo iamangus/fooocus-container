@@ -15,6 +15,6 @@ RUN apt-get update -y && \
 WORKDIR /data
 USER user
 
-ENTRYPOINT tail -f /usr/bin/entrypoint.sh
-#ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+#ENTRYPOINT tail -f /usr/bin/entrypoint.sh
+ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 EXPOSE 8080
