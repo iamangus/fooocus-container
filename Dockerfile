@@ -15,5 +15,6 @@ RUN apt-get update -y && \
 WORKDIR /data
 USER user
 
-ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+ENTRYPOINT ["tail -f /etc/hosts"]
+#ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 EXPOSE 8080
